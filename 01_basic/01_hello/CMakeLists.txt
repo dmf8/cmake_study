@@ -1,3 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 project(hello_cmake)
-add_executable(${PROJECT_NAME} hello.cpp)
+
+set(SRCS hello.cpp)
+
+add_executable(${PROJECT_NAME} ${SRCS})
