@@ -1,0 +1,11 @@
+set(LIB_NAME test_lib)
+add_library(${LIB_NAME} SHARED IMPORTED GLOBAL) 
+set_property(TARGET ${LIB_NAME} 
+    PROPERTY IMPORTED_LOCATION ${CMAKE_CURRENT_LIST_DIR}/lib/lib${LIB_NAME}.so
+)
+set_property(TARGET ${LIB_NAME} 
+    PROPERTY INTERFACE_INCLUDE_DIRECTORIES ${CMAKE_CURRENT_LIST_DIR}/inc
+)
+target_link_libraries(${PROJECT_NAME} ${LIB_NAME})
+
+unset(LIB_NAME)

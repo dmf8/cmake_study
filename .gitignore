@@ -6,4 +6,5 @@
 !*.c
 !*.cpp
 !CMakeLists.txt
+!*.cmake
 !.gitignore
