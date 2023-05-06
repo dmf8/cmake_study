@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.5)
 project(sub_dirs)
 
+set(CMAKE_BUILD_TYPE "Debug")
+
 add_subdirectory(execution)
 add_subdirectory(static_lib)
 add_subdirectory(header_lib)
